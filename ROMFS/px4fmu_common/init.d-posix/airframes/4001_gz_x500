@@ -8,8 +8,13 @@
 . ${R}etc/init.d/rc.mc_defaults
 
 PX4_SIMULATOR=${PX4_SIMULATOR:=gz}
-PX4_GZ_WORLD=${PX4_GZ_WORLD:=default}
-PX4_SIM_MODEL=${PX4_SIM_MODEL:=x500}
+PX4_GZ_WORLD=${PX4_GZ_WORLD:=sonoma}
+PX4_GZ_MODEL=${PX4_GZ_MODEL:=x500}
+PX4_GZ_MODEL_POSE=${PX4_GZ_MODEL_POSE:=303.08 -180.22 2.86 0.02 0 0.97}
+
+param set-default SIM_GZ_HOME_LAT 38.162539
+param set-default SIM_GZ_HOME_LON -122.457854
+param set-default SIM_GZ_HOME_ALT 6
 
 param set-default SIM_GZ_EN 1
 

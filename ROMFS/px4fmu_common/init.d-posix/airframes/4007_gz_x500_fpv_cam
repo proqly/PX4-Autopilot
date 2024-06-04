@@ -7,6 +7,10 @@
 
 PX4_GZ_MODEL=${PX4_GZ_MODEL:=x500_fpv_cam}
 PX4_GZ_WORLD=${PX4_GZ_WORLD:=sonoma}
-PX4_GZ_MODEL_POSE=${PX4_GZ_MODEL_POSE:=278.08 -134.22 2.86 0.02 0 0.97}
+PX4_GZ_MODEL_POSE=${PX4_GZ_MODEL_POSE:=283.08 -160.22 2.86 0.02 0 0.97}
 
 . ${R}etc/init.d-posix/airframes/4001_gz_x500
+
+# param set-default SIM_GZ_HOME_LAT 38.162539
+# param set-default SIM_GZ_HOME_LON -122.457854
+# param set-default SIM_GZ_HOME_ALT 6
